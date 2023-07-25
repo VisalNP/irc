@@ -1,0 +1,68 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <ul id="messages"></ul>
+    <ul id="channels"></ul>
+    <form action="">
+      <input id="message-input" autocomplete="off" /><button>Send</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script>
+        var socket = io();
+        var messages = document.getElementById('messages');
+        var channels = document.getElementById('channels');
+        var form = document.querySelector('form');
+        var input = document.getElementById('message-input');
+      
+        var username = prompt('Enter your username:');
+        socket.emit('register user', username);
+      
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          if (input.value) {
+            if (input.value.startsWith('/')) {
+              socket.emit('command', input.value);
+            } else {
+              socket.emit('chat message', input.value);
+            }
+            input.value = '';
+          }
+        });
+      
+        socket.on('chat history', function(history) {
+          messages.innerHTML = ''; // Clear messages before displaying history
+          history.forEach(function(msg) {
+            addMessage(msg);
+          });
+        });
+      
+        socket.on('chat message', function(msg) {
+          addMessage(msg);
+        });
+
+        socket.on('update channels', function(channelsList) {
+          channels.innerHTML = ''; // Clear channels before displaying updated list
+          channelsList.forEach(function(channel) {
+            addChannel(channel);
+          });
+        });
+      
+        function addMessage(msg) {
+          var item = document.createElement('li');
+          item.textContent = msg.user + ': ' + msg.content + ' (' + new Date(msg.timestamp).toLocaleString() + ')';
+          messages.appendChild(item);
+          window.scrollTo(0, document.body.scrollHeight);
+        }
+
+        function addChannel(channel) {
+          var item = document.createElement('li');
+          item.textContent = channel.name;
+          channels.appendChild(item);
+        }
+    </script>
+  </body>
+</html>
