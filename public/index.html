@@ -1,68 +1,127 @@
-<!-- public/index.html -->
-
-<!DOCTYPE html>
 <html>
-  <body>
-    <ul id="messages"></ul>
-    <ul id="channels"></ul>
-    <form action="">
-      <input id="message-input" autocomplete="off" /><button>Send</button>
-    </form>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    #chat-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #messages {
+      height: 400px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+      background-color: #222222;
+      flex-grow: 1;
+    }
+    #channels {
+      width: 200px;
+      height: 400px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 10px;
+      background-color: #222222;
+    }
+    form {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+    #message-input {
+      flex-grow: 1;
+      margin-right: 10px;
+      padding: 5px;
+      background-color: #333333;
+      color: #ffffff;
+      border: none;
+    }
+    button {
+      padding: 10px;
+      background-color: #333333;
+      color: #ffffff;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="channels"></div>
+    <div id="messages"></div>
+  </div>
+  <form action="">
+    <input id="message-input" autocomplete="off" /><button>Send</button>
+  </form>
 
-    <script src="/socket.io/socket.io.js"></script>
-
-    <script>
-        var socket = io();
-        var messages = document.getElementById('messages');
-        var channels = document.getElementById('channels');
-        var form = document.querySelector('form');
-        var input = document.getElementById('message-input');
-      
-        var username = prompt('Enter your username:');
-        socket.emit('register user', username);
-      
-        form.addEventListener('submit', function(e) {
-          e.preventDefault();
-          if (input.value) {
-            if (input.value.startsWith('/')) {
-              socket.emit('command', input.value);
-            } else {
-              socket.emit('chat message', input.value);
-            }
-            input.value = '';
-          }
-        });
-      
-        socket.on('chat history', function(history) {
-          messages.innerHTML = ''; // Clear messages before displaying history
-          history.forEach(function(msg) {
-            addMessage(msg);
-          });
-        });
-      
-        socket.on('chat message', function(msg) {
-          addMessage(msg);
-        });
-
-        socket.on('update channels', function(channelsList) {
-          channels.innerHTML = ''; // Clear channels before displaying updated list
-          channelsList.forEach(function(channel) {
-            addChannel(channel);
-          });
-        });
-      
-        function addMessage(msg) {
-          var item = document.createElement('li');
-          item.textContent = msg.user + ': ' + msg.content + ' (' + new Date(msg.timestamp).toLocaleString() + ')';
-          messages.appendChild(item);
-          window.scrollTo(0, document.body.scrollHeight);
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+    var messages = document.getElementById('messages');
+    var channels = document.getElementById('channels');
+    var form = document.querySelector('form');
+    var input = document.getElementById('message-input');
+  
+    var username = prompt('Enter your username:');
+    socket.emit('register user', username);
+  
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (input.value) {
+        if (input.value.startsWith('/')) {
+          socket.emit('command', input.value);
+        } else {
+          socket.emit('chat message', input.value);
         }
+        input.value = '';
+      }
+    });
+  
+    socket.on('chat history', function(history) {
+      messages.innerHTML = ''; 
+      history.forEach(function(msg) {
+        addMessage(msg);
+      });
+    });
+  
+    socket.on('chat message', function(msg) {
+      addMessage(msg);
+    });
 
-        function addChannel(channel) {
-          var item = document.createElement('li');
-          item.textContent = channel.name;
-          channels.appendChild(item);
-        }
-    </script>
-  </body>
+    socket.on('update channels', function(channelsList) {
+      channels.innerHTML = ''; 
+      channelsList.forEach(function(channel) {
+        addChannel(channel);
+      });
+    });
+  
+    function addMessage(msg) {
+      var item = document.createElement('li');
+      item.textContent = '[' + msg.channelName + '] - ' + new Date(msg.timestamp).toLocaleString() + ' - ' + msg.user + ': ' + msg.content;
+      messages.appendChild(item);
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+
+
+    function addChannel(channel) {
+      var item = document.createElement('li');
+      item.textContent = channel.name;
+      channels.appendChild(item);
+    }
+</script>
+  
+</body>
 </html>

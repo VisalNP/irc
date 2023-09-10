@@ -1,122 +1,296 @@
 [
   {
-    "timestamp": "2023-07-25T14:17:17.628Z",
-    "user": "anonymous",
-    "content": "Test message"
+    "timestamp": "2023-07-25T22:03:50.567Z",
+    "user": "System",
+    "content": "aaadadadadadd has logged in.",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:17:17.634Z",
-    "user": "Bob",
-    "content": "Test message"
+    "timestamp": "2023-07-25T22:03:53.849Z",
+    "user": "aaadadadadadd",
+    "content": "Bendo",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:20:14.017Z",
-    "user": "anonymous",
-    "content": "a"
+    "timestamp": "2023-07-25T22:04:19.210Z",
+    "user": "aaadadadadadd",
+    "content": "Test Epitech",
+    "channelName": "Epitech"
   },
   {
-    "timestamp": "2023-07-25T14:20:14.024Z",
-    "user": "test",
-    "content": "a"
+    "timestamp": "2023-07-25T22:04:33.321Z",
+    "user": "aaadadadadadd",
+    "content": "Test Zone",
+    "channelName": "Zone"
   },
   {
-    "timestamp": "2023-07-25T14:20:37.287Z",
-    "user": "anonymous",
-    "content": "ouais"
+    "timestamp": "2023-07-25T22:05:01.114Z",
+    "user": "BTTF",
+    "content": "Ouais Yo",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:20:37.290Z",
-    "user": "test",
-    "content": "ouais"
+    "timestamp": "2023-07-26T16:01:00.385Z",
+    "user": "System",
+    "content": "vivi has logged in.",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:21:34.483Z",
+    "timestamp": "2023-07-26T16:02:18.934Z",
     "user": "vivi",
-    "content": "ah"
+    "content": "test123",
+    "channelName": "Zone"
   },
   {
-    "timestamp": "2023-07-25T14:21:37.762Z",
+    "timestamp": "2023-07-26T16:02:20.439Z",
     "user": "vivi",
-    "content": "ouais la c'est mieux"
+    "content": "ajada",
+    "channelName": "Zone"
   },
   {
-    "timestamp": "2023-07-25T14:21:53.382Z",
+    "timestamp": "2023-07-26T16:02:20.642Z",
+    "user": "vivi",
+    "content": "da",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:20.804Z",
+    "user": "vivi",
+    "content": "zd",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:20.940Z",
+    "user": "vivi",
+    "content": "ad",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:21.076Z",
+    "user": "vivi",
+    "content": "d",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:24.792Z",
+    "user": "vivi",
+    "content": "ahdiahda",
+    "channelName": "Epitech"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:25.238Z",
+    "user": "vivi",
+    "content": "zjdz",
+    "channelName": "Epitech"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:25.468Z",
+    "user": "vivi",
+    "content": "z",
+    "channelName": "Epitech"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:26.529Z",
+    "user": "vivi",
+    "content": "dzkfzkzfkfk",
+    "channelName": "Epitech"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:26.734Z",
+    "user": "vivi",
+    "content": "k",
+    "channelName": "Epitech"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:47.128Z",
+    "user": "Visal",
+    "content": "za",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:47.303Z",
+    "user": "Visal",
+    "content": "z",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:47.467Z",
+    "user": "Visal",
+    "content": "z",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:47.675Z",
+    "user": "Visal",
+    "content": "zdf",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:47.835Z",
+    "user": "Visal",
+    "content": "zd",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:02:48.288Z",
+    "user": "Visal",
+    "content": "a",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:03:34.967Z",
+    "user": "Visal",
+    "content": "a",
+    "channelName": "Zone"
+  },
+  {
+    "timestamp": "2023-07-26T16:10:07.546Z",
+    "user": "System",
+    "content": "undefined has logged out.",
+    "channelName": "General"
+  },
+  {
+    "timestamp": "2023-07-26T16:10:11.330Z",
+    "user": "System",
+    "content": "zizi has logged in.",
+    "channelName": "General"
+  },
+  {
+    "timestamp": "2023-07-26T16:10:19.373Z",
     "user": "zizi",
-    "content": "test"
+    "content": "a",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:24:43.458Z",
-    "user": "System",
-    "content": "vivi has logged in."
-  },
-  {
-    "timestamp": "2023-07-25T14:43:52.110Z",
-    "user": "System",
-    "content": "vivi has logged in."
-  },
-  {
-    "timestamp": "2023-07-25T14:44:02.442Z",
-    "user": "System",
-    "content": "zizi has logged in."
-  },
-  {
-    "timestamp": "2023-07-25T14:44:05.626Z",
+    "timestamp": "2023-07-26T16:10:19.982Z",
     "user": "zizi",
-    "content": "weshalor"
+    "content": "da",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:44:07.690Z",
+    "timestamp": "2023-07-26T16:10:20.187Z",
+    "user": "zizi",
+    "content": "d",
+    "channelName": "General"
+  },
+  {
+    "timestamp": "2023-07-26T16:10:20.414Z",
+    "user": "zizi",
+    "content": "a",
+    "channelName": "General"
+  },
+  {
+    "timestamp": "2023-07-26T23:40:49.234Z",
     "user": "System",
-    "content": "zizi has logged out."
+    "content": "sooyaa has logged in.",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:46:39.940Z",
-    "user": "System",
-    "content": "bilel has logged in."
+    "timestamp": "2023-07-26T23:40:54.491Z",
+    "user": "sooyaa",
+    "content": "Wesh laz one",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:46:43.269Z",
-    "user": "bilel",
-    "content": "wesh la zone"
+    "timestamp": "2023-07-26T23:41:00.149Z",
+    "user": "sooyaa",
+    "content": "mdr nan mais tavu",
+    "channelName": "Zone"
   },
   {
-    "timestamp": "2023-07-25T14:56:30.675Z",
-    "user": "System",
-    "content": "undefined has logged out."
+    "timestamp": "2023-07-26T23:41:26.626Z",
+    "user": "sooyaa",
+    "content": "akaka",
+    "channelName": "General"
   },
   {
-    "timestamp": "2023-07-25T14:56:36.943Z",
-    "user": "System",
-    "content": "vivi has logged in."
+    "timestamp": "2023-07-26T23:41:37.050Z",
+    "user": "sooyaa",
+    "content": "ahaha",
+    "channelName": "Zone"
   },
   {
-    "timestamp": "2023-07-25T14:56:50.993Z",
-    "user": "vivi",
-    "content": "test message"
+    "timestamp": "2023-07-26T23:41:54.242Z",
+    "user": "sooyaa",
+    "content": "mdr",
+    "channelName": "Waga"
   },
   {
-    "timestamp": "2023-07-25T14:57:53.468Z",
-    "user": "vivi",
-    "content": "command create test"
+    "timestamp": "2023-07-26T23:41:56.404Z",
+    "user": "sooyaa",
+    "content": "nan mais lourd",
+    "channelName": "Waga"
   },
   {
-    "timestamp": "2023-07-25T14:58:54.368Z",
-    "user": "vivi",
-    "content": "aaaaaaaaaaa"
+    "timestamp": "2023-07-26T23:42:47.484Z",
+    "user": "sooyaa",
+    "content": "ljdo",
+    "channelName": "AGA"
   },
   {
-    "timestamp": "2023-07-25T15:01:48.084Z",
-    "user": "vivi",
-    "content": "ah"
+    "timestamp": "2023-07-26T23:42:47.774Z",
+    "user": "sooyaa",
+    "content": "zkjf",
+    "channelName": "AGA"
   },
   {
-    "timestamp": "2023-07-25T15:02:05.884Z",
-    "user": "System",
-    "content": "vivi has logged out."
+    "timestamp": "2023-07-26T23:42:48.036Z",
+    "user": "sooyaa",
+    "content": "zkfzk",
+    "channelName": "AGA"
   },
   {
-    "timestamp": "2023-07-25T15:02:07.837Z",
-    "user": "System",
-    "content": "vivi has logged in."
+    "timestamp": "2023-07-26T23:42:48.740Z",
+    "user": "sooyaa",
+    "content": "fzfkzkfzkfz",
+    "channelName": "AGA"
+  },
+  {
+    "timestamp": "2023-07-26T23:42:49.095Z",
+    "user": "sooyaa",
+    "content": "fkz",
+    "channelName": "AGA"
+  },
+  {
+    "timestamp": "2023-07-26T23:42:49.393Z",
+    "user": "sooyaa",
+    "content": "fkzf",
+    "channelName": "AGA"
+  },
+  {
+    "timestamp": "2023-07-26T23:42:49.621Z",
+    "user": "sooyaa",
+    "content": "kzf",
+    "channelName": "AGA"
+  },
+  {
+    "timestamp": "2023-07-26T23:42:49.824Z",
+    "user": "sooyaa",
+    "content": "kfz",
+    "channelName": "AGA"
+  },
+  {
+    "timestamp": "2023-07-26T23:42:50.031Z",
+    "user": "sooyaa",
+    "content": "fkz",
+    "channelName": "AGA"
+  },
+  {
+    "timestamp": "2023-07-26T23:42:50.262Z",
+    "user": "sooyaa",
+    "content": "fkz",
+    "channelName": "AGA"
+  },
+  {
+    "timestamp": "2023-07-26T23:42:50.490Z",
+    "user": "sooyaa",
+    "content": "fkz",
+    "channelName": "AGA"
+  },
+  {
+    "timestamp": "2023-07-26T23:42:50.906Z",
+    "user": "sooyaa",
+    "content": "fkzfkzfk",
+    "channelName": "AGA"
   }
 ]
